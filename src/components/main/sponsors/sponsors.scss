@@ -1,0 +1,42 @@
+.sponsors {
+	background: #fdd04a;
+	padding-top: 120px;
+	padding-bottom: 100px;
+	&__title {
+		h2 {
+			font-size: 48px;
+			line-height: 58px;
+			text-align: center;
+			text-transform: capitalize;
+			color: #222730;
+			span {
+				padding-bottom: 10px;
+				display: inline-block;
+				background: url("../../../resources/img/png/blue__underline.png") no-repeat;
+				background-position: bottom;
+			}
+		}
+		margin-bottom: 45px;
+	}
+	&__text {
+		max-width: 576px;
+		margin: 0 auto;
+		p {
+			font-size: 16px;
+			line-height: 26px;
+			text-align: center;
+			color: #555555;
+		}
+		margin-bottom: 50px;
+	}
+	&-companys {
+		&__column {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			img {
+				padding-bottom: 15px;
+			}
+		}
+	}
+}

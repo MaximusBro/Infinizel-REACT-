@@ -1,0 +1,60 @@
+.header {
+	background: linear-gradient(to right, black 50%, #57b8ff 50%);
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__nav {
+		ul {
+			display: flex;
+			gap: 50px;
+			li:hover {
+				a {
+					transition: all 0.3s;
+					color: #fac422;
+				}
+			}
+		}
+	}
+	&-interective {
+		align-items: center;
+		display: flex;
+		gap: 20px;
+		&__shop {
+			position: relative;
+			button {
+				background: none;
+				border: none;
+			}
+			div {
+				position: absolute;
+				transform: translate(200%, -235%);
+				span {
+					display: inline-block;
+					min-width: 20px;
+					min-height: 18px;
+					background: #ffffff;
+					border-radius: 9px;
+					text-align: center;
+				}
+			}
+		}
+		&__contact {
+			align-items: center;
+			button {
+				margin-top: 15px;
+				min-width: 178px;
+				min-height: 62px;
+				border: 1px solid #ffffff;
+				background: none;
+
+				color: #ffffff;
+			}
+			button:hover {
+				transition: all 0.5s;
+				background-color: #fac422;
+			}
+		}
+	}
+}

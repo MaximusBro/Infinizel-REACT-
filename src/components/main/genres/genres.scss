@@ -1,0 +1,44 @@
+.genres {
+	&__wrapper {
+		display: flex;
+		max-width: 100vw;
+	}
+	&-card {
+		position: relative;
+		width: 100%;
+		min-height: 732px;
+		text-align: center;
+		&__wrapper {
+			max-width: 300px;
+			position: absolute;
+			top: 0;
+			transform: translate(50%, 150%);
+		}
+		&__text {
+			p {
+				font-size: 48px;
+				line-height: 58px;
+				text-transform: capitalize;
+				color: #ffffff;
+			}
+		}
+	}
+	&-card:hover {
+		.genres-card__wrapper {
+			transition: all 0.2s;
+			opacity: 0.1;
+		}
+	}
+	&-card:first-child {
+		background: url("../../../resources/img/jpg/genres__fps.jpg") no-repeat;
+		background-size: cover;
+	}
+	&-card:nth-child(2) {
+		background: url("../../../resources/img/jpg/genres__multiplayer.jpg") no-repeat;
+		background-size: cover;
+	}
+	&-card:last-child {
+		background: url("../../../resources/img/jpg/genres__openworld.jpg") no-repeat;
+		background-size: cover;
+	}
+}

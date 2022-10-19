@@ -1,0 +1,64 @@
+.community {
+	background: url("../../../resources/img/jpg/community__bcg.jpg") no-repeat center;
+	background-size: cover;
+	padding: 130px 0;
+	&__wrapper {
+		max-width: 900px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__title {
+		font-size: 72px;
+		line-height: 82px;
+		text-align: center;
+		color: #141820;
+		margin-bottom: 50px;
+		span {
+			padding-bottom: 10px;
+			display: inline-block;
+			background: url("../../../resources/img/png/blue__underline.png") no-repeat;
+			background-position: bottom;
+		}
+	}
+	&__text {
+		margin-bottom: 45px;
+		p {
+			font-size: 17px;
+			line-height: 28px;
+			text-align: center;
+			color: #555555;
+		}
+		p:first-child {
+			max-width: 718px;
+		}
+		p:last-child {
+			max-width: 846px;
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	&__form {
+		input {
+			width: 445px;
+			height: 70px;
+		}
+		input::placeholder {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 28px;
+
+			color: #555555;
+		}
+		button {
+			width: 221px;
+			height: 70px;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 28px;
+			text-align: center;
+			color: #ffffff;
+			border: none;
+			background: #57b8ff;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.era {
+	background: black;
+	padding: 174px 0;
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__title {
+		max-width: 700px;
+	}
+	&__video {
+		max-width: 500px;
+		max-height: 550px;
+		position: relative;
+		video {
+			max-width: 492px;
+			min-height: 550px;
+			border: 10px solid #0d0d0d;
+			border-radius: 30px;
+		}
+		img {
+			display: none;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			transform: translate(145%, -50%);
+		}
+	}
+}

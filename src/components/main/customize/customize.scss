@@ -1,0 +1,32 @@
+.customize {
+	background: #2a313c;
+	padding: 19vh 0;
+	position: relative;
+	.wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__bcg {
+		position: absolute;
+		top: 0%;
+		transform: translateX(15%);
+	}
+
+	&__info {
+		max-width: 600px;
+	}
+	&__column {
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		img {
+			max-width: 174px;
+			max-height: 150px;
+		}
+		img:hover {
+			transition: all 0.3s;
+			border: 10px solid #3b3d46;
+			border-radius: 20px;
+		}
+	}
+}

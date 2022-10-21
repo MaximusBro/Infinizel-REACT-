@@ -1,0 +1,14 @@
+.community {
+	@media screen and (max-width: 452px) {
+		&__title {
+			h2 {
+				font-size: 60px;
+			}
+		}
+		&__form {
+			input {
+				width: 310px;
+			}
+		}
+	}
+}

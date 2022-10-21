@@ -1,5 +1,5 @@
-
 import "../era/era.scss";
+import "../era/eraMedia.scss";
 import playBtn from "../../../resources/img/png/play__button.png";
 import InfoBlock from "../../UI/infoBlock/InfoBlock";
 import trailerMW2 from "../../../resources/videos/CallofDuty_Modern Warfare II-World GameplayRevealTrailer.mp4";

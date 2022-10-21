@@ -1,5 +1,8 @@
 .header {
 	background: linear-gradient(to right, black 50%, #57b8ff 50%);
+	.hamburger-menu {
+		display: none;
+	}
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -15,6 +18,11 @@
 					color: #fac422;
 				}
 			}
+		}
+	}
+	&__nav {
+		.header-interective {
+			display: none;
 		}
 	}
 	&-interective {

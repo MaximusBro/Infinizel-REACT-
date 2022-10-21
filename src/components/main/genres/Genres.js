@@ -1,4 +1,5 @@
 import "../genres/genres.scss";
+import "../genres/genresMedia.scss";
 import fpsPic from "../../../resources/img/png/genres__fps.png"
 import multiplayerPic from "../../../resources/img/png/genres__multiplayer.png"
 import openWorldPic from "../../../resources/img/png/genres__openworld.png"

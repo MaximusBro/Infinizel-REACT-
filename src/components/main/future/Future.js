@@ -1,4 +1,5 @@
 import "../future/future.scss";
+import "../future/futureMedia.scss";
 import FutureTitle from "../../UI/futureTitle/FutureTitle";
 import futurePic from "../../../resources/img/png/future__pic.png";
 const Future = () => {

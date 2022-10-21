@@ -1,4 +1,5 @@
 import "../features/features.scss";
+import "../features/featuresMedia.scss";
 import FutureTitle from "../../UI/futureTitle/FutureTitle";
 import romb from "../../../resources/img/png/romb.png";
 const FeaturesCard = (props) => {

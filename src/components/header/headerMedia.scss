@@ -1,0 +1,54 @@
+.header {
+	@media screen and (max-width: 1000px) {
+		.hamburger-menu {
+			display: block;
+		}
+		&__nav {
+			position: absolute;
+			ul {
+				display: block;
+				position: fixed;
+				top: 0;
+				left: -100%;
+				width: 300px;
+				height: 100%;
+				margin: 0;
+				padding: 80px 0;
+				list-style: none;
+				background: black;
+				box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+				transition-duration: 0.25s;
+				z-index: 1;
+				li {
+					display: block;
+					padding: 12px 24px;
+					color: #333;
+					font-family: "Roboto", sans-serif;
+					font-size: 20px;
+					font-weight: 600;
+					text-decoration: none;
+					transition-duration: 0.25s;
+				}
+			}
+			.active {
+				left: 0;
+			}
+		}
+	}
+	@media screen and (max-width: 493px) {
+		&-interective {
+			display: none;
+		}
+		&__nav {
+			.header-interective {
+				display: flex;
+			}
+		}
+		.wrapper {
+			justify-content: space-evenly;
+		}
+		&__logo {
+			margin-right: 16%;
+		}
+	}
+}

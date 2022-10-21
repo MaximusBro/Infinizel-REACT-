@@ -1,0 +1,15 @@
+.genres {
+	@media screen and (max-width: 988px) {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+		&-card {
+			max-height: 300px;
+			&__wrapper {
+				margin: 0 auto;
+				margin-top: 50px;
+				max-width: 300px;
+			}
+		}
+	}
+}

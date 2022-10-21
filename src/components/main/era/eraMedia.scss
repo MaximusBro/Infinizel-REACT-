@@ -1,0 +1,16 @@
+.era {
+	@media screen and (max-width: 1200px) {
+		.wrapper {
+			max-width: 900px;
+			margin: 0 auto;
+		}
+	}
+	@media screen and (max-width: 512px) {
+		&__video {
+			margin-top: 25px;
+			video {
+				max-width: 300px;
+			}
+		}
+	}
+}

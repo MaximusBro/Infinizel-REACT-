@@ -1,0 +1,23 @@
+.features {
+	@media screen and (max-width: 1159px) {
+		&-card {
+			max-width: 300px;
+		}
+	}
+	@media screen and (max-width: 719px) {
+		&-card {
+			padding: 15px;
+			max-width: 200px;
+		}
+	}
+	@media screen and (max-width: 462px) {
+		&__column {
+			max-width: 230px;
+			margin: 0 auto;
+		}
+		&-card {
+			padding-right: 20px;
+			max-width: 200px;
+		}
+	}
+}

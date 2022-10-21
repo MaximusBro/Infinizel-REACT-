@@ -1,0 +1,29 @@
+@import "../../styles/animations.scss";
+.footer {
+	@media screen and (max-width: 1000px) {
+		position: relative;
+		.hamburger-menu {
+			display: block;
+		}
+		.wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__block:last-child {
+			margin-right: 8%;
+		}
+		&__nav {
+			padding: 25px 100%;
+			display: none;
+			background: #31415ff6;
+		}
+		&__block {
+			margin-right: 25%;
+		}
+		.active {
+			display: block;
+			animation-name: fade-in;
+			animation-duration: 1s;
+		}
+	}
+}

@@ -1,5 +1,6 @@
 import { Component } from "react"
-import "../news/news.scss"
+import "../news/news.scss";
+import "../news/newsMedia.scss";
 import FutureTitle from "../../UI/futureTitle/FutureTitle";
 import newsImg from "../../../resources/img/jpg/news__esports.jpg";
 import naviImg from "../../../resources/img/jpg/news__navi.jpg";

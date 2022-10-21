@@ -1,0 +1,25 @@
+.future {
+	@media screen and (max-width: 850px) {
+		&__picture {
+			display: none;
+		}
+		&-info {
+			margin: 0 auto;
+		}
+	}
+	@media screen and (max-width: 357px) {
+		&-info {
+			&__title {
+				h1 {
+					font-size: 50px;
+				}
+			}
+			&__btns {
+				button:first-child {
+					width: 150px;
+					height: 65px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.customize {
+	@media screen and (max-width: 1057px) {
+		padding: 50px 0;
+		.customize__info {
+			margin: 0 auto;
+		}
+		&__bcg {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 540px) {
+		&__column {
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+		}
+		&__info {
+			h2 {
+				font-size: 65px;
+			}
+		}
+	}
+}

@@ -6,6 +6,7 @@
 	&-title {
 		&__head {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			h2 {
 				max-width: 541px;
@@ -50,6 +51,7 @@
 					}
 				}
 				&-subtitle {
+					max-width: 100%;
 					p {
 						font-size: 18px;
 						line-height: 18px;

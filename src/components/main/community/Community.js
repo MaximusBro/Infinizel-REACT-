@@ -1,4 +1,5 @@
 import "../community/community.scss";
+import "../community/communityMedia.scss";
 const Community = () => {
 	return (
 		<section className="community">

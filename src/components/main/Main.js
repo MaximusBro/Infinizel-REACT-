@@ -18,6 +18,8 @@ const Main = () => {
 			<News />
 			<Community />
 		</main>
+
 	)
 }
+
 export default Main;

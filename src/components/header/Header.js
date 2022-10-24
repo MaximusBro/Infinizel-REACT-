@@ -4,6 +4,7 @@ import logo from "../../resources/img/png/logo.png";
 import shop from "../../resources/img/svg/shop.svg";
 import { useState } from "react";
 import BurgerBtn from "../UI/burgerBtn/BurgerBtn";
+import { Link } from "react-router-dom";
 const Header = () => {
 
 	const [shopCount, setCount] = useState(0);
@@ -25,15 +26,15 @@ const Header = () => {
 
 					<ul className={`sidebar ${activeState ? 'active' : ''}`}>
 						<li>
-							<a href="#">Home</a></li>
+							<Link to="/">Home</Link></li>
 						<li>
-							<a href="#">About</a></li>
+							<Link to="/about">About</Link></li>
 						<li>
-							<a href="#">Team</a></li>
+							<Link to="/team">Team</Link></li>
 						<li>
-							<a href="#" >Shop</a></li>
+							<Link to="/shop" >Shop</Link></li>
 						<li>
-							<a href="#">Pages</a></li>
+							<Link href="/pages">Pages</Link></li>
 						<div className="header-interective">
 							<div className="header-interective__shop">
 								<button><img src={shop} alt="shop" onClick={addNewShopItem} /></button>
@@ -60,6 +61,7 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
+
 		</header >
 	)
 }

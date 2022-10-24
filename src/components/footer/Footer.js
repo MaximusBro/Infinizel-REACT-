@@ -3,6 +3,7 @@ import "../footer/footerMedia.scss";
 import logoImg from "../../resources/img/png/logo.png"
 import instagramImg from "../../resources/img/png/instagram.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Footer = () => {
 
 	const [activeBurger, setBurgerState] = useState(false)
@@ -34,7 +35,11 @@ const Footer = () => {
 						<FooterList li1="About"
 							li2="Blog"
 							li3="Shop"
-							li4="Contact us" />
+							li4="Contact us"
+							href1="/about"
+							href2="/blog"
+							href3="/shop"
+							href4="/contact" />
 					</div>
 					<div className="footer__block">
 						<FooterTitle
@@ -43,7 +48,12 @@ const Footer = () => {
 						<FooterList li1="Styleguide"
 							li2="Changelog"
 							li3="licenses"
-							li4="Team" />
+							li4="Team"
+							href1="/styleguide"
+							href2="/changelog"
+							href3="/licence"
+							href4="/team" />
+
 					</div>
 					<div className="footer__block">
 						<FooterTitle
@@ -75,17 +85,17 @@ const FooterList = (props) => {
 	return (
 		<div className="footer__list">
 			<ul>
-				<li><a href="#">{props.li1 || <img src={props.img1} alt="" />}
-				</a>
+				<li><Link to={props.href1}>{props.li1 || <img src={props.img1} alt="" />}
+				</Link>
 				</li>
-				<li><a href="#">{props.li2 || <img src={props.img2} alt="" />}
-				</a>
+				<li><Link to={props.href2}>{props.li2 || <img src={props.img2} alt="" />}
+				</Link>
 				</li>
-				<li><a href="#">{props.li3 || <img src={props.img3} alt="" />}
-				</a>
+				<li><Link to={props.href3}>{props.li3 || <img src={props.img3} alt="" />}
+				</Link>
 				</li>
-				<li><a href="#">{props.li4 || <img src={props.img4} alt="" />}
-				</a>
+				<li><Link to={props.href4}>{props.li4 || <img src={props.img4} alt="" />}
+				</Link>
 				</li>
 			</ul>
 		</div >

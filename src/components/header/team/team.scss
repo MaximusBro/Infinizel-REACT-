@@ -1,0 +1,30 @@
+.team {
+	padding: 50px 0;
+	&-column {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		&-card {
+			padding: 25px;
+			background: #57b8ff;
+			border-radius: 40px;
+			width: 250px;
+			max-height: 600px;
+			text-align: center;
+			margin-bottom: 15px;
+			&__title {
+				max-width: 100%;
+				max-height: 100%;
+				img {
+					border-radius: 100px;
+					max-width: 100%;
+					max-height: 250px;
+				}
+			}
+			&__subtitle {
+				margin-top: 5px;
+				color: white;
+			}
+		}
+	}
+}

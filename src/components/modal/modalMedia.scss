@@ -1,0 +1,9 @@
+.modal {
+	@media screen and (max-width: 900px) {
+		&__content {
+			width: 100vw;
+		}
+		&__contact {
+		}
+	}
+}

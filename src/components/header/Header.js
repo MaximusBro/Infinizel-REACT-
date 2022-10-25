@@ -5,7 +5,7 @@ import shop from "../../resources/img/svg/shop.svg";
 import { useState } from "react";
 import BurgerBtn from "../UI/burgerBtn/BurgerBtn";
 import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({ setActive }) => {
 
 	const [shopCount, setCount] = useState(0);
 	const addNewShopItem = () => {
@@ -43,7 +43,7 @@ const Header = () => {
 								</div>
 							</div>
 							<div className="header-interective__contact">
-								<button>Contact Us</button>
+								<button onClick={() => setActive(true)}> Contact Us</button>
 							</div>
 						</div>
 					</ul>
@@ -57,7 +57,7 @@ const Header = () => {
 						</div>
 					</div>
 					<div className="header-interective__contact">
-						<button>Contact Us</button>
+						<button onClick={() => setActive(true)}>Contact Us</button>
 					</div>
 				</div>
 			</div>

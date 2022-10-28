@@ -10,8 +10,17 @@ import { Modal } from './components/modal/Modal';
 
 const App = () => {
 
+	const [name, setName] = useState('');
+	const [value, setValue] = useState({});
+	const [email, setEmail] = useState('');
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		if (name.length > 3 && email.match("@")) {
 
-	const [modalActive, setModalActive] = useState(true)
+			e.target.reset();
+		}
+	};
+	const [modalActive, setModalActive] = useState(false)
 	return (
 		<>
 
@@ -24,10 +33,24 @@ const App = () => {
 			</Routes>
 			<Footer />
 			<Modal active={modalActive} setActive={setModalActive}>
-				<form action="#" className='modal__contact' id="contact">
-					<input type="text" name="name" id="contactName" placeholder='Your name' />
-					<input type="email" name="email" id="contactEmail" placeholder='Email' />
-					<input type="submit" value="Submit" />
+				<form action="#" className='modal__contact'
+					id="contact"
+					onSubmit={handleSubmit}>
+					<input type="text"
+						name="name"
+						id="contactName"
+						placeholder='Your name'
+						onChange={(e) => setName(e.target.value)}
+					/>
+					<input type="email"
+						name="email"
+						id="contactEmail"
+						placeholder='Email'
+						onChange={(e) => setEmail(e.target.value)}
+					/>
+					<input type="submit"
+						value="Submit"
+					/>
 				</form>
 			</Modal>
 

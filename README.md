@@ -15,6 +15,14 @@ I used the following stack:
 ### Example one of my components (App):
 ```JavaScript
 const App = () => {
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
+import { About } from './components/header/about/About';
+import { Team } from './components/header/team/Team';
+import { Routes, Route } from "react-router-dom";
+import { useState } from 'react';
+import { Modal } from './components/modal/Modal';
 
 	const [name, setName] = useState('');
 	const [value, setValue] = useState({});

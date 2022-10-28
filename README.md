@@ -1,2 +1,4 @@
+# Version FULL SIZE:
 ![Image alt](https://github.com/MaximusBro/Infinizel-REACT-/raw/master/public/fullsize.png)
+# VERSION FOR TABLET:
 ![Image alt](https://github.com/MaximusBro/Infinizel-REACT-/raw/master/public/tablet.png)

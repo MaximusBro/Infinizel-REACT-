@@ -5,6 +5,7 @@ import shop from "../../resources/img/svg/shop.svg";
 import { useState } from "react";
 import BurgerBtn from "../UI/burgerBtn/BurgerBtn";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types"
 const Header = ({ setActive }) => {
 
 	const [shopCount, setCount] = useState(0);
@@ -64,5 +65,10 @@ const Header = ({ setActive }) => {
 
 		</header >
 	)
+}
+
+Header.propTypes = {
+	setActive: PropTypes.func,
+	modalActive: PropTypes.bool
 }
 export default Header;
